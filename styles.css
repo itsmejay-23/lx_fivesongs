@@ -188,6 +188,136 @@ img {
   background: rgba(255, 255, 255, 0.05);
 }
 
+.song-page {
+  max-width: 860px;
+  margin: 32px auto 0;
+}
+
+.song-page-header {
+  margin-bottom: 24px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  color: var(--text);
+}
+
+.song-page h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.1;
+}
+
+.song-subtitle {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.song-panel {
+  margin-top: 18px;
+  padding: clamp(20px, 4vw, 34px);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: 0 12px 24px var(--shadow);
+}
+
+.audio-label,
+.lyrics-heading,
+.campaign-instructions h2 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+}
+
+.song-audio {
+  width: 100%;
+}
+
+.download-link,
+.external-link {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 16px;
+  color: #101010;
+  background: var(--text);
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.download-link:hover,
+.download-link:focus-visible,
+.external-link:hover,
+.external-link:focus-visible {
+  background: #ffffff;
+}
+
+.lyrics-heading {
+  margin-top: 30px;
+}
+
+.lyrics {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+.romanized-lyrics {
+  margin-top: 20px;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+
+.romanized-lyrics summary {
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.romanized-lyrics .lyrics {
+  margin-top: 14px;
+}
+
+.campaign-instructions {
+  margin-top: 24px;
+}
+
+.campaign-instructions p {
+  margin: 16px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.hashtag-example {
+  padding: 14px 16px;
+  color: var(--text);
+  background: var(--panel-strong);
+  border-left: 3px solid #25f4ee;
+}
+
+.external-link {
+  margin: 0;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--line);
+}
+
+.external-link:hover,
+.external-link:focus-visible {
+  color: #101010;
+}
+
 .accounts-section {
   margin-top: 32px;
   padding: 0 8px;
