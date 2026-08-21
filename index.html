@@ -128,13 +128,7 @@
       <footer class="site-footer">Created by Yoki</footer>
     </div>
     <script>
-      const countdownKey = "lx-draft-submission-deadline";
-      const storedDeadline = localStorage.getItem(countdownKey);
-      const deadline = storedDeadline ? Number(storedDeadline) : Date.now() + 3 * 24 * 60 * 60 * 1000;
-
-      if (!storedDeadline) {
-        localStorage.setItem(countdownKey, String(deadline));
-      }
+      const deadline = new Date("2026-08-24T23:59:00+08:00").getTime();
 
       const countdownTime = document.getElementById("countdown-time");
       let countdownInterval;
@@ -149,7 +143,7 @@
         countdownTime.textContent = `${days}d ${String(hours).padStart(2, "0")}h ${String(minutes).padStart(2, "0")}m`;
 
         if (remaining === 0) {
-          countdownTime.textContent = "0d 00h 00m";
+          countdownTime.textContent = "0d 0h 0m";
           clearInterval(countdownInterval);
         }
       }
