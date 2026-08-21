@@ -67,6 +67,28 @@ img {
   object-fit: contain;
 }
 
+.draft-countdown {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 8px;
+  margin: 12px 8px 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: right;
+}
+
+.countdown-time {
+  color: #ff4d4d;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.countdown-label {
+  font-weight: 700;
+}
+
 .rights-note {
   position: absolute;
   top: 18px;
@@ -426,6 +448,12 @@ img {
   .rights-note {
     top: 12px;
     right: 12px;
+  }
+
+  .draft-countdown {
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 2px;
   }
 
   .song-nav ul {
