@@ -197,9 +197,16 @@ img {
   margin-bottom: 24px;
 }
 
+.song-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
 .back-link {
   display: inline-block;
-  margin-bottom: 18px;
+  flex-shrink: 0;
   color: var(--muted);
   text-decoration: none;
   font-weight: 600;
@@ -273,6 +280,13 @@ img {
   white-space: pre-line;
 }
 
+.translated-character {
+  padding: 0 3px;
+  color: #111111;
+  background: #ffe45c;
+  border-radius: 3px;
+}
+
 .romanized-lyrics {
   margin-top: 20px;
   border-top: 1px solid var(--line);
@@ -304,6 +318,14 @@ img {
   color: var(--text);
   background: var(--panel-strong);
   border-left: 3px solid #25f4ee;
+}
+
+@media (max-width: 600px) {
+  .song-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
 }
 
 .external-link {
