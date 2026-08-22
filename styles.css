@@ -39,7 +39,7 @@ img {
   height: 280px;
   border-radius: 26px;
   overflow: visible;
-  background-image: url('./images/banner.jpg');
+  background-image: url('./images/banner.webp');
   background-size: cover;
   background-position: center;
   border: 1px solid var(--line);
@@ -87,6 +87,75 @@ img {
 
 .countdown-label {
   font-weight: 700;
+}
+
+.rights-note {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 2;
+}
+
+.rights-note summary {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  place-items: center;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  font-size: 1.35rem;
+  list-style: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.rights-note summary::-webkit-details-marker {
+  display: none;
+}
+
+.rights-note summary:hover,
+.rights-note summary:focus-visible {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
+}
+
+.rights-note-content {
+  position: absolute;
+  top: 54px;
+  right: 0;
+  z-index: 1;
+  width: min(380px, calc(100vw - 48px));
+  max-height: min(460px, calc(100vh - 110px));
+  overflow-y: auto;
+  padding: 20px;
+  color: #161616;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+}
+
+.rights-note-content h2,
+.rights-note-content h3 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.rights-note-content h2 {
+  font-size: 1.1rem;
+}
+
+.rights-note-content h3 {
+  margin-top: 18px;
+  font-size: 0.98rem;
+}
+
+.rights-note-content p {
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
 }
 
 .reminder-dialog {
